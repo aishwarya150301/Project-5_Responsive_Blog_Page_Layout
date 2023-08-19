@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Responsive blog</title>
+  </head>
+  <body>
+    <header class="main_header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="main_heading">BLOGGER's SITE</h1>
+            <P class="main_heading__para">Welcome to my <span class="text-capitalized bg-dark text-white py-2">World of blog</span></P>
+
+        </div>
+         
+        <!-- the main images -->
+        <div class="main_header__div d-flex align-items-start justify-content-center pl-5  flex-column shadow" >
+            <!-- <p >Thapa Technical</p> -->
+            <h2>Aishwarya Srivastava</h2>
+            <h3>Web Developer</h3>
+            <button class="text_uppercase">Subscribe</button>
+        </div>
+            
+    </header>
+    <!-- -----------------------------------------header ends--------------------------------------------- -->
+    <!-- two side div -->
+    <div class="comtainer=fluid">
+        <div class="row">
+            <!-- to get the left and write side div -->
+            <div class="col-xl-10 col-lg-10  col-md-11 col=11  mx-auto my-5 ">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- to get the left side div space -->
+                    <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                      <div class="row gy-5">
+                        <!-- our first div -->
+                        <div class="col-12 card p-4 shadow blog_left__div">
+                            <div class="d-flex d-flex justify-content-center align-items-center flex-column py-3 pb-5">
+                                <h1>Best laptop in 2020</h1>
+                                <P class="blog_title"><span class="font-weight-bold">Title description </span> August 12,2020</P>
+                           </div>
+                            <figure class="right_side__img mb-5">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HP_Pavilion_dv9380_%28490330573%29.jpg/1200px-HP_Pavilion_dv9380_%28490330573%29.jpg" class="img-fluid shadow">
+                            </figure>
+                              <p><span class="font-weight-bold"> Aish's Blog</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempora, necessitatibus animi minus ut fugit dolore similique et quibusdam quae quo? Tempore ab accusamus perspiciatis aut? Deleniti expedita aliquam totam.</p>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem, necessitatibus cupiditate autem praesentium dolorem nam magnam numqua</p>
+                              <div class="d-flex justify-content-between left_div_btns">
+                                <div>
+                                    <button class="left_div__like " id="like_btn"> 
+                                        <i class="fa-solid fa-thumbs-up"></i>Like
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="left_div__reply" onclick="reply('reply1')"> 
+                                        Replies <badge class="bg-white text-dard p-2">1</badge>
+                                    </button>
+                                </div>
+                              </div>
+
+                              <div class="replies" id="reply1">
+                                <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                                    <div class="reply_img mx-2 align-items-center">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                                    </div>
+                                     <div class="reply_text__left">
+                                        <p class="blog_title">
+                                            <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                        </p>
+                                        <p>Your content is nice!!</p>
+                                     </div>
+                                </div>
+
+                              </div>
+                        </div>
+                        <!-- our second div -->
+                        <div class="col-12 card p-4 shadow blog_left__div">
+                          <div class="d-flex d-flex justify-content-center align-items-center flex-column py-3 pb-5">
+                              <h1>Best Headphones in 2022</h1>
+                              <P class="blog_title"><span class="font-weight-bold">Title description </span> September 2,2020</P>
+                         </div>
+                          <figure class="right_side__img mb-5">
+                              <img src="https://summer.harvard.edu/wp-content/uploads/sites/7/2022/06/how-to-study-like-a-harvard-student.jpg" class="img-fluid shadow">
+                          </figure>
+                            <p><span class="font-weight-bold"> Aish's Blog</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempora, necessitatibus animi minus ut fugit dolore similique et quibusdam quae quo? Tempore ab accusamus perspiciatis aut? Deleniti expedita aliquam totam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem, necessitatibus cupiditate autem praesentium dolorem nam magnam numqua</p>
+                            <div class="d-flex justify-content-between left_div_btns">
+                              <div>
+                                  <button class="left_div__like" id="like_btn"> 
+                                      <i class="fa-solid fa-thumbs-up"></i>Like
+                                  </button>
+                              </div>
+                              <div>
+                                  <button class="left_div__reply" onclick="reply('reply2')"> 
+                                      Replies <badge class="bg-white text-dard p-2">2</badge>
+                                  </button>
+                              </div>
+                            </div>
+
+                            <div class="replies" id="reply2">
+                              <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                                  <div class="reply_img mx-2 align-items-center">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                                  </div>
+                                   <div class="reply_text__left">
+                                      <p class="blog_title">
+                                          <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                      </p>
+                                      <p>Fantastic job</p>
+                                   </div>
+                              </div>
+                              <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                                <div class="reply_img mx-2 align-items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                                </div>
+                                 <div class="reply_text__left">
+                                    <p class="blog_title">
+                                        <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                    </p>
+                                    <p>Your content is beneficial!!</p>
+                                 </div>
+                            </div>
+
+                            </div>
+                      </div>
+
+                       <!-- our third div -->
+
+
+                      <div class="col-12 card p-4 shadow blog_left__div">
+                        <div class="d-flex d-flex justify-content-center align-items-center flex-column py-3 pb-5">
+                            <h1>Environmental Situations</h1>
+                            <P class="blog_title"><span class="font-weight-bold">Title description </span> June 5,2020</P>
+                       </div>
+                        <figure class="right_side__img mb-5">
+                            <img src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/edu/art/5b167f741e5de.jpg" class="img-fluid shadow">
+                        </figure>
+                          <p><span class="font-weight-bold">Aish's Blog</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempora, necessitatibus animi minus ut fugit dolore similique et quibusdam quae quo? Tempore ab accusamus perspiciatis aut? Deleniti expedita aliquam totam.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem, necessitatibus cupiditate autem praesentium dolorem nam magnam numqua</p>
+                          <div class="d-flex justify-content-between left_div_btns">
+                            <div>
+                                <button class="left_div__like" id="like_btn"> 
+                                    <i class="fa-solid fa-thumbs-up"></i>Like
+                                </button>
+                            </div>
+                            <div>
+                                <button class="left_div__reply" onclick="reply('reply3')"> 
+                                    Replies <badge class="bg-white text-dard p-2">3</badge>
+                                </button>
+                            </div>
+                          </div>
+
+                          <div class="replies" id="reply3">
+                            <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                                <div class="reply_img mx-2 align-items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                                </div>
+                                 <div class="reply_text__left">
+                                    <p class="blog_title">
+                                        <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                    </p>
+                                    <p>Your content is nice!!</p>
+                                 </div>
+                            </div>
+                            <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                              <div class="reply_img mx-2 align-items-center">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                              </div>
+                               <div class="reply_text__left">
+                                  <p class="blog_title">
+                                      <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                  </p>
+                                  <p>I agree to you!</p>
+                               </div>
+                          </div>
+                          <div class="d-flex justify-content-start flex-row align-items-center card reply_card py-3">
+                            <div class="reply_img mx-2 align-items-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C3nurGYfraunSjHFAzksDeVheodeS0T8rg&usqp=CAU" alt="">
+                             </div>
+                             <div class="reply_text__left">
+                                <p class="blog_title">
+                                    <span class="font-weight-bold"> Aishwarya..</span>Aug 12,2020 , 7:20 PM
+                                </p>
+                                <p>good</p>
+                             </div>
+                           </div>
+
+                          </div>
+                       </div>
+                  
+                
+                  
+                      </div>
+                    </div>
+                    <!-- to get the right side div space -->
+                    <div class="col-lg-3 col-lg-7 col-11 justify-content-end m-lg-0 m-auto">
+                      <div class="rwo gy-5 left_div_blog" id="lower-div">
+                        <!-- about me part -->
+                        <div class="col-12 about_me_div shadow" style="background-color: rgb(247, 244, 244);">
+                          <p style="font-weight: bold; font-size: 3rem; text-align: center; color: rgb(50, 46, 46);">Aishwarya Srivastava</p>
+                          <p style="margin: 0 1rem; padding-bottom: 10rem;"> Just me and myself and i m exploring the world . I love to explore and shre my experience with you all by writing blogs</p>
+
+                        </div>
+                        <!-- popular post -->
+                        <div class="popular_post">
+                          <div class="right_div_title py-4 pl-2">
+                              <h2>Popular posts</h2>
+                          </div>
+                          <div class="right_sub_div shadow">
+                            <div class="row">
+                              <div class="col-3 popular_post__img1 py=2 pl-2">
+  
+                              </div>
+                              <div class="col-9">
+                                    <h3><img class="X" src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" alt=""><span>Bill Gates</span></h3>
+                                    <p class="text-capitalized">CEO Microsoft</p>
+                              </div>
+  
+                            </div>
+                            <div class="row">
+                              <div class="col-3 popular_post__img1 py=2 pl-2">
+  
+                              </div>
+                              <div class="col-9">
+                                    <h3><img class="X" src="https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg" alt=""><span>Mark- Zukerberg</span></h3>
+                                    <p class="text-capitalized">Programmer</p>
+                              </div>
+  
+                            </div>
+                            <div class="row">
+                              <div class="col-3 popular_post__img1 py=2 pl-2">
+  
+                              </div>
+                              <div class="col-9">
+                                    <h3><img class="X" src="https://hips.hearstapps.com/hmg-prod/images/jeff-bezos-attends-the-lord-of-the-rings-the-rings-of-power-news-photo-1684851576.jpg" alt=""><span>jeff-bezos</span></h3>
+                                    <p class="text-capitalized"> Amazon</p>
+                              </div>
+  
+                            </div>
+                            <div class="row">
+                              <div class="col-3 popular_post__img1 py=2 pl-2">
+  
+                              </div>
+                              <div class="col-9">
+                                    <h3><img class="X" src="https://static.toiimg.com/photo/msid-96332136/96332136.jpg" alt=""><span>Steve Jobs</span></h3>
+                                    <p class="text-capitalized">Apple</p>
+                              </div>
+  
+                            </div>
+                              
+                          </div>
+                        </div>
+                         <!-- adverise part -->
+                         <div class="right_div_post">
+                           <div class="right_div_title py-4 pl-2">
+                                 <h2>Advertise</h2>
+                           </div>
+                           <div class="right_sub_div">
+                             <div class="advertise_img bg-light shadow">
+                                 <p> Ads goes here</p>
+                             </div>
+                           </div>
+                         </div>
+                         <!-- tags -->
+                         <div class="right_div_post">
+                          <div class="right_div__title py-4 pl-2">
+                               <h2>Tags</h2>
+                          </div>
+                           <div class="tags_main right_sub_div">
+                              <a href="#" target="_blank" class="badge shadow text-capitalized bg-dark"><h2 class="tagtext">html</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark "> <h2 class="tagtext">css</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"><h2 class="tagtext">js</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">react</h2> </a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">vue</h2> </a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">php</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">python</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">kotlin</h2></a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">c++</h2> </a>
+                              <a href="#" class="badge shadow text-capitalized bg-dark"> <h2 class="tagtext">java</h2></a>
+                           </div>
+                         </div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- -----ouside row--- -->
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     
+    <script type="text/JavaScript">
+      const reply = (res) =>{
+        var res = document.getElementById(res);
+        console.log(res);
+        if(res.className == "replies"){
+          res.className = "thapa_show";
+        }else if(res.className =="thapa_show"){
+          res.className = "replies";
+        }
+      }
+
+      // like button js
+      // to get the id of like button
+      const like = document.getElementById('like_btn');
+
+      const singleClick = () =>{
+        like.style.fontWeight = 'bold';
+        like.style.background = '#bbe1fa'
+        like.style.color ='#1b262c';
+        like.innerHTML =" Liked";
+      }
+      const doubleClick = () =>{
+        like.style.fontWeight = 'normal';
+        like.style.background = '#3282b8'
+        like.style.color ='#fff';
+        like.innerHTML ="Like";
+      }
+    
+      var clickCount = 0;
+      like.addEventListener('click', function(){
+            clickCount++;
+            if(clickCount === 1){
+              singleClickTimer = setTimeout(function(){
+                clickCount = 0;
+                singleClick();
+              },400);
+            } else if(clickCount === 2){
+              clearTimeout(singleClickTimer);
+              clickCount =0;
+              doubleClick();
+            }
+      },false);
+      
+      
+
+      
+    </script>
+  </body>
+</html>
